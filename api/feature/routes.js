@@ -5,6 +5,7 @@ const router = express.Router();
 const adminRoutes = require('./admin/admin.router');
 const userRoutes = require('./user/user.router');
 const mikrotikRoutes = require('./mikrotik/mikrotik.router');
+const oltRoutes = require('./olt/olt.router');
 
 
 
@@ -14,6 +15,8 @@ router.use("/admin", adminRoutes);
 router.use("/user", userRoutes);
 //mikrotik routes
 router.use("/mikrotik", mikrotikRoutes);
+//olt routes
+router.use("/olt", oltRoutes);
 
 
 
